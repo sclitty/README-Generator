@@ -50,54 +50,54 @@ function generateReadMe () {
     ]).then(function(response) {
         // TEMPLATE
         const readMeTemplate =
-            `# ${response.projectName}
+`# ${response.projectName}
 
-            ## Contents 
+## Contents 
 
-            1. [ Introduction ](#intro)
-            2. [ Installation ](#install)
-            3. [ Usage ](#usage)
-            4. [ License ](#license)
-            5. [ Contributors ](#contributing)
-            6. [ Tests ](#tests)
-            7. [ Questions ](#questions)
+1. [ Introduction ](#intro)
+2. [ Installation ](#install)
+3. [ Usage ](#usage)
+4. [ License ](#license)
+5. [ Contributors ](#contributing)
+6. [ Tests ](#tests)
+7. [ Questions ](#questions)
 
-            <br>
+<br>
 
-            <a name="intro"></a>
-            ## 1. Introduction
+<a name="intro"></a>
+## 1. Introduction
 
-            ${response.projectIntro}
+${response.projectIntro}
 
-            <a name="install"></a>
-            ### 2. Installation
+<a name="install"></a>
+### 2. Installation
 
-            ${response.projectInstall}
+${response.projectInstall}
 
-            <a name="usage"></a>
-            ### 3. Usage
+<a name="usage"></a>
+### 3. Usage
 
-            ${response.projectUsage}
+${response.projectUsage}
 
-            <a name="license"></a>
-            ### 4. Licence
+<a name="license"></a>
+### 4. Licence
 
-            ${response.projectLic}
+${response.projectLic}
 
-            <a name="contributing"></a>
-            ### 5. Contributors
+<a name="contributing"></a>
+### 5. Contributors
 
-            ${response.projectCon}
+${response.projectCon}
 
-            <a name="tests"></a>
-            ### 6. Tests
+<a name="tests"></a>
+### 6. Tests
 
-            ${response.projectTest}
+${response.projectTest}
 
-            <a name="questions"></a>
-            ### 7. Questions
+<a name="questions"></a>
+### 7. Questions
 
-            ${response.projectQuestion}`
+${response.projectQuestion}`
 
         // CREATE FILE NAME VARIABLE, REMOVES SPACES AND CONVERTS TO LOWERCASE
         const fileName = `${response.projectName.replace(/\s/g, '').toLowerCase()}.md`;
@@ -113,13 +113,3 @@ function generateReadMe () {
 };
 
 generateReadMe ();
-
-// TODO: create an array of questions 
-
-// TODO: function that will generate my readme template 
-
-// TODO: use inquirer to prompt users with questions 
-
-// TODO: with that object of user answers from inquirer - pass those into my generate readme function 
-
-// TODO: writeFile using template generated README function 
