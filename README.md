@@ -19,10 +19,9 @@ A markdown file generator to give the user the basic README layout they can use 
 4. [ License ](#license)
 5. [ Contributors ](#contributing)
 6. [ Tests ](#tests)
-7. [ Questions ](#questions)
+7. [ Contact Information ](#questions)
 
 <br>
-
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -78,7 +77,7 @@ Past and future testing information can go here!
 
 
 <a name="questions"></a>
-### 7. Questions
+### 7. Contact Information
 
 Well... do you have any?
 

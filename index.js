@@ -26,26 +26,42 @@ function generateReadMe () {
             name: "projectUsage"
         },
         {
-            type: "input",
-            message: "Would you like to display a licence? Enter how you would when making a standard markdown file.",
+            type: "list",
+            message: "Select a License",
+            choices: 
+                    [
+                        "MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+                        "MPL 2.0 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
+                        "BY [![License: Open Data Commons Attribution](https://img.shields.io/badge/License-ODC_BY-brightgreen.svg)](https://opendatacommons.org/licenses/by/)",
+                        "Need to grab one, still..."
+                    ],
             name: "projectLic"
         },
         {
             type: "input",
-            message: "Who else contributed to this project?",
+            message: "Who else contributed to this project? :",
             name: "projectCon"
         },
         {
             type: "input",
-            message: "Explain any testing you may have had while making this project",
+            message: "Explain any testing you may have had while making this project, if any at this point :",
             name: "projectTest"
         },
         {
             type: "input",
-            message: "Add any questions for users or other contributors",
-            name: "projectQuestion"
-        }
-
+            message: "What is your preferred Email for user/contributor questions? :",
+            name: "projectQuestion1"
+        },
+        {
+            type: "input",
+            message: "Link to you GitHub profile :",
+            name: "projectQuestion2"
+        },
+        {
+            type: "input",
+            message: "Any additional information you would like the users to know about contacting you:",
+            name: "projectQuestion3"
+        },
 
     ]).then(function(response) {
         // TEMPLATE
@@ -95,9 +111,13 @@ ${response.projectCon}
 ${response.projectTest}
 
 <a name="questions"></a>
-### 7. Questions
+### 7. Contact Information
 
-${response.projectQuestion}`
+${response.projectQuestion1}
+
+${response.projectQuestion2}
+
+${response.projectQuestion3}`
 
         // CREATE FILE NAME VARIABLE, REMOVES SPACES AND CONVERTS TO LOWERCASE
         const fileName = `${response.projectName.replace(/\s/g, '').toLowerCase()}.md`;
