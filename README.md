@@ -1,6 +1,6 @@
 ## README-Generator
 
-A markdown file generator to give the user the basic README layout they can use while working on your next coding adventure!
+A markdown file generator to give the user the basic README layout they can use while working on their next coding adventure!
 
 >Utilizing **inquirer** to allow the user to set project specific information while    generating a professional markdown file. 
 
