@@ -113,9 +113,9 @@ ${response.projectTest}
 <a name="questions"></a>
 ### 7. Contact Information
 
-${response.projectQuestion1}
+Email: ${response.projectQuestion1}
 
-${response.projectQuestion2}
+GitHub: ${response.projectQuestion2}
 
 ${response.projectQuestion3}`
 

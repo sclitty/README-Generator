@@ -79,6 +79,7 @@ Past and future testing information can go here!
 <a name="questions"></a>
 ### 7. Contact Information
 
-Well... do you have any?
+Email: user@usermail.com
+Github: https://github.com/sclitty
 
 
