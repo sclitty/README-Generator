@@ -52,13 +52,34 @@ Answer the following prompts and watch the magic happen!
 <a name="license"></a>
 ### 4. Licence
 
+Add project licenses here!
+
+Example -
+
+>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+    When prompted enter the license information like this...
+
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
 <a name="contributing"></a>
 ### 5. Contributors
+
+SHOUT-OUT!!!!!!
+Give everyone who contributed the recognition they deserve! Rarely do we do this on our own... except maybe homework projects... maybe. 
 
 <a name="tests"></a>
 ### 6. Tests
 
+Past and future testing information can go here!
+
+
+
 <a name="questions"></a>
 ### 7. Questions
+
+Well... do you have any?
 
 
